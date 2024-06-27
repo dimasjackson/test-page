@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site Pessoal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: #fff;
+            padding: 1em;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        section {
+            padding: 2em;
+            max-width: 800px;
+            margin: auto;
+        }
+        .profile-pic {
+            max-width: 150px;
+            border-radius: 50%;
+            margin: 1em 0;
+        }
+        .portfolio-item {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 2em;
+        }
+        .portfolio-item img {
+            max-width: 200px;
+            margin-right: 1em;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 1em;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+        }
+        form button {
+            padding: 1em 2em;
+            border: none;
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Meu Site Pessoal</h1>
+    </header>
+    <nav>
+        <a href="#sobre-mim">Sobre Mim</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    <section id="sobre-mim">
+        <h2>Sobre Mim</h2>
+        <img src="sua-foto.jpg" alt="Foto de Perfil" class="profile-pic">
+        <p>Biografia: [Sua biografia aqui]</p>
+        <p>Interesses: [Seus interesses aqui]</p>
+    </section>
+    <section id="portfolio">
+        <h2>Portfólio</h2>
+        <div class="portfolio-item">
+            <img src="projeto1.jpg" alt="Projeto 1">
+            <div>
+                <h3>Projeto 1</h3>
+                <p>Descrição do projeto 1.</p>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="projeto2.jpg" alt="Projeto 2">
+            <div>
+                <h3>Projeto 2</h3>
+                <p>Descrição do projeto 2.</p>
+            </div>
+        </div>
+        <!-- Adicione mais projetos conforme necessário -->
+    </section>
+    <section id="contato">
+        <h2>Contato</h2>
+        <form action="https://formspree.io/YOUR_EMAIL" method="POST">
+            <input type="text" name="name" placeholder="Seu Nome" required>
+            <input type="email" name="_replyto" placeholder="Seu Email" required>
+            <textarea name="message" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <p>Email: <a href="mailto:seu-email@example.com">seu-email@example.com</a></p>
+        <p>Redes Sociais:
+            <a href="https://twitter.com/seu_usuario" target="_blank">Twitter</a> |
+            <a href="https://linkedin.com/in/seu_usuario" target="_blank">LinkedIn</a>
+        </p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Meu Nome. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
